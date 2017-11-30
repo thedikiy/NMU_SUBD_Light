@@ -10,9 +10,15 @@ public class Main {
   private final static String USAGE = "Usage: java db_url db_username db_password";
   private final static String[] CREATE_TABLE = new String[]
       {
-          "create table if not exists groups ( `group` VARCHAR(6), numbers_stud INTEGER(2), university VARCHAR(30))",
-          "create table if not exists student ( `group` VARCHAR(6), stud_second_name VARCHAR(10), age INTEGER(2), birth_date DATE, details VARCHAR(50))",
-          "create table if not exists classes ( `group` VARCHAR(6), done_classes VARCHAR(35), not_done_classes VARCHAR(35))"
+          "create table if not exists groups ( `group` VARCHAR(6), numbers_stud INTEGER(2), " +
+                  "university VARCHAR(30))",
+
+          "create table if not exists student ( `group` VARCHAR(6)," +
+                  " stud_second_name VARCHAR(10), age INTEGER(2), birth_date DATE," +
+                  " details VARCHAR(50))",
+
+          "create table if not exists classes ( `group` VARCHAR(6), done_classes VARCHAR(35), " +
+                  "not_done_classes VARCHAR(35))"
       };
 
   private final static String[] INSERT_QUERY = new String[]

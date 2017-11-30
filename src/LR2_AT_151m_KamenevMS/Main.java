@@ -10,7 +10,8 @@ import java.sql.Statement;
 public class Main {
 
   private final static String USAGE = "Usage: java db_url db_username db_password";
-  private final static String CREATE_TABLE_QUERY = "create table if not exists credit_card ( number VARCHAR(12), bank VARCHAR(32))";
+  private final static String CREATE_TABLE_QUERY =
+          "create table if not exists credit_card ( number VARCHAR(12), bank VARCHAR(32))";
   private final static String INSERT_QUERY = "insert into credit_card values(?, ?)";
   private final static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
